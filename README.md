@@ -1,15 +1,42 @@
-# dwmblocks
-Modular status bar for dwm written in c.
-# usage
-To use dwmblocks first run 'make' and then install it with 'sudo make install'.
-After that you can put dwmblocks in your xinitrc or other startup script to have it start with dwm.
-# modifying blocks
-The statusbar is made from text output from commandline programs.
-Blocks are added and removed by editing the blocks.h header file.
-By default the blocks.h header file is created the first time you run make which copies the default config from blocks.def.h.
-This is so you can edit your status bar commands and they will not get overwritten in a future update.
-# patches
-Here are some patches to dwmblocks that add features that I either don't want to merge in, or that require a dwm patch to work.
-I do not maintain these but I will take pull requests to update them.
-<br>
-<a href=https://gist.github.com/IGeraGera/e4a5583b91b3eec2e81fdceb44dea717>dwmblocks-statuscmd-b6b0be4.diff</a>
+# Dynamic Window Manager's **Blocks**
+
+`dwmblocks` is a modular status bar for `dwm`. The status bar is made from text output from shell scripts.
+
+## Upstream
+
+The upstream development of `dwmblocks` can be found [here](https://github.com/torrinfail/dwmblocks).
+
+# Blocks
+
+- cpu
+- internet
+- volume
+- battery
+- time
+- date
+
+Most of these scripts can be found in my [dotfiles](https://gitlab.com/Hooregi/Halofiles).
+
+# Arch Linux Install
+
+Download the `PKGBUILD` from this repository and run the following command:
+
+```
+makepkg -cf
+```
+
+This will create a file that ends in `.pkg.tar.zst`. Then run:
+
+```
+sudo pacman -U *.pkg.tar.zst
+```
+
+# Regular Install
+
+Download the source code from this repository:
+
+```
+git clone https://gitlab.com/Hooregi/dwmblocks.git
+cd dwmblocks
+sudo make clean install
+```
