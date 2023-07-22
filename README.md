@@ -36,7 +36,7 @@ sudo pacman -U *.pkg.tar.zst
 Download the source code from this repository:
 
 ```
-git clone https://gitlab.com/Hooregi/dwmblocks.git
+git clone https://github.com/hooregi/dwmblocks.git
 cd dwmblocks
 sudo make clean install
 ```
