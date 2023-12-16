@@ -2,6 +2,7 @@
 static const Block blocks[] = {
 // icon, command, update interval, update signal
 	{"", "cat /tmp/recordingicon 2>/dev/null", 0, 9},
+	{"", "~/.local/bin/statusbar/sb-torrent", 20, 7},
 	{"", "~/.local/bin/statusbar/sb-cpu", 10, 18},
   {"", "~/.local/bin/statusbar/sb-wifi", 5, 4},
 	{"", "~/.local/bin/statusbar/sb-volume", 10, 10},

@@ -8,6 +8,8 @@ The upstream development of `dwmblocks` can be found [here](https://github.com/t
 
 # Blocks
 
+- recording
+- torrents
 - cpu
 - internet
 - volume
@@ -15,7 +17,7 @@ The upstream development of `dwmblocks` can be found [here](https://github.com/t
 - time
 - date
 
-Most of these scripts can be found in my [dotfiles](https://gitlab.com/Hooregi/Halofiles).
+Most of these scripts can be found in my [dotfiles](https://github.com/hooregi/halofiles).
 
 # Arch Linux Install
 
